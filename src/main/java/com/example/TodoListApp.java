@@ -1,4 +1,4 @@
-package com.todolistproject;
+package com.demo;
 
 import java.util.Scanner;
 import java.util.ArrayList;
