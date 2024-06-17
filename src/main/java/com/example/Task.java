@@ -1,4 +1,4 @@
-package com.todolistappjava;
+package com.example;
 
 public class Task {
     private String description;
