@@ -4,9 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class TodoListApp {
-    private static ArrayList<String> tasks = new ArrayList<>();
-    private static ArrayList<Boolean> completed = new ArrayList<>();
-    private static ArrayList<String> addtask = new ArrayList<String>();
+    private static ArrayList<Task> tasks = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -50,3 +48,13 @@ public class TodoListApp {
             }
         }
     }  
+
+    public static void addTask(Scanner scanner) {
+        System.out.print("Enter the task description: ");
+        String taskDescription = scanner.nextLine();
+        Task newTask = new Task(taskDescription);
+        tasks.add(newTask);
+        System.out.println("Task added: " + taskDescription);
+    }
+
+}
