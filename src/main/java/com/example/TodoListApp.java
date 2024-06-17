@@ -59,10 +59,9 @@ public class TodoListApp {
 
 }package com.example;
 
-import java.util.Scanner;
-import java.util.ArrayList;
 
 public class TodoListApp {
+
     private static ArrayList<Task> tasks = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -107,6 +106,7 @@ public class TodoListApp {
             }
         }
     }  
+}
 
     public static void addTask(Scanner scanner) {
         System.out.print("Enter the task description: ");
@@ -115,8 +115,6 @@ public class TodoListApp {
         tasks.add(newTask);
         System.out.println("Task added: " + taskDescription);
     }
-
-}
 
 public static void main(String args) { 
     ArrayList<String> listTask = new ArrayList<>();
@@ -135,4 +133,5 @@ public static void main(String args) {
     }
     scanner.close();
     }
+}
     
